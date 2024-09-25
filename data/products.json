@@ -1,0 +1,207 @@
+{
+	"total": 100,
+	"limit": 20,
+	"offset": 0,
+	"data": [
+		{
+			"name": "Fresh Orange",
+			"category": "fruit",
+			"weight": "500g",
+			"price": "$11.75",
+			"discount": "25% off",
+			"discountPrice": "$15.50",
+			"review": "$15.50",
+			"image": "image1.jpg"
+		},
+		{
+			"name": "Red Apple",
+			"category": "fruit",
+			"weight": "300g",
+			"price": "$9.50",
+			"discount": "10% off",
+			"discountPrice": "$10.50",
+			"review": "$10.50",
+			"image": "image2.jpg"
+		},
+		{
+			"name": "Banana Bunch",
+			"category": "fruit",
+			"weight": "1kg",
+			"price": "$6.25",
+			"discount": "5% off",
+			"discountPrice": "$6.50",
+			"review": "$6.50",
+			"image": "image3.jpg"
+		},
+		{
+			"name": "Grapes",
+			"category": "fruit",
+			"weight": "200g",
+			"price": "$4.99",
+			"discount": "20% off",
+			"discountPrice": "$5.99",
+			"review": "$5.99",
+			"image": "image4.jpg"
+		},
+		{
+			"name": "Watermelon",
+			"category": "fruit",
+			"weight": "2kg",
+			"price": "$12.99",
+			"discount": "15% off",
+			"discountPrice": "$14.50",
+			"review": "$14.50",
+			"image": "image5.jpg"
+		},
+		{
+			"name": "Mango",
+			"category": "fruit",
+			"weight": "500g",
+			"price": "$7.25",
+			"discount": "30% off",
+			"discountPrice": "$10.35",
+			"review": "$10.35",
+			"image": "image6.jpg"
+		},
+		{
+			"name": "Strawberry Pack",
+			"category": "fruit",
+			"weight": "400g",
+			"price": "$8.49",
+			"discount": "20% off",
+			"discountPrice": "$10.50",
+			"review": "$10.50",
+			"image": "image7.jpg"
+		},
+		{
+			"name": "Blueberries",
+			"category": "fruit",
+			"weight": "300g",
+			"price": "$11.99",
+			"discount": "15% off",
+			"discountPrice": "$13.50",
+			"review": "$13.50",
+			"image": "image8.jpg"
+		},
+		{
+			"name": "Pineapple",
+			"category": "fruit",
+			"weight": "1.5kg",
+			"price": "$9.99",
+			"discount": "10% off",
+			"discountPrice": "$11.10",
+			"review": "$11.10",
+			"image": "image9.jpg"
+		},
+		{
+			"name": "Avocado",
+			"category": "fruit",
+			"weight": "250g",
+			"price": "$4.50",
+			"discount": "5% off",
+			"discountPrice": "$4.75",
+			"review": "$4.75",
+			"image": "image10.jpg"
+		},
+		{
+			"name": "Papaya",
+			"category": "fruit",
+			"weight": "1kg",
+			"price": "$7.99",
+			"discount": "10% off",
+			"discountPrice": "$8.99",
+			"review": "$8.99",
+			"image": "image11.jpg"
+		},
+		{
+			"name": "Kiwi Pack",
+			"category": "fruit",
+			"weight": "500g",
+			"price": "$9.75",
+			"discount": "15% off",
+			"discountPrice": "$11.50",
+			"review": "$11.50",
+			"image": "image12.jpg"
+		},
+		{
+			"name": "Pomegranate",
+			"category": "fruit",
+			"weight": "400g",
+			"price": "$6.99",
+			"discount": "25% off",
+			"discountPrice": "$9.25",
+			"review": "$9.25",
+			"image": "image13.jpg"
+		},
+		{
+			"name": "Peach",
+			"category": "fruit",
+			"weight": "500g",
+			"price": "$5.99",
+			"discount": "20% off",
+			"discountPrice": "$7.50",
+			"review": "$7.50",
+			"image": "image14.jpg"
+		},
+		{
+			"name": "Cherries",
+			"category": "fruit",
+			"weight": "250g",
+			"price": "$10.99",
+			"discount": "10% off",
+			"discountPrice": "$12.25",
+			"review": "$12.25",
+			"image": "image15.jpg"
+		},
+		{
+			"name": "Raspberries",
+			"category": "fruit",
+			"weight": "150g",
+			"price": "$6.49",
+			"discount": "5% off",
+			"discountPrice": "$6.99",
+			"review": "$6.99",
+			"image": "image16.jpg"
+		},
+		{
+			"name": "Guava",
+			"category": "fruit",
+			"weight": "700g",
+			"price": "$8.99",
+			"discount": "15% off",
+			"discountPrice": "$10.50",
+			"review": "$10.50",
+			"image": "image17.jpg"
+		},
+		{
+			"name": "Coconut",
+			"category": "fruit",
+			"weight": "1kg",
+			"price": "$5.75",
+			"discount": "20% off",
+			"discountPrice": "$6.99",
+			"review": "$6.99",
+			"image": "image18.jpg"
+		},
+		{
+			"name": "Lemon",
+			"category": "fruit",
+			"weight": "500g",
+			"price": "$4.25",
+			"discount": "10% off",
+			"discountPrice": "$4.75",
+			"review": "$4.75",
+			"image": "image19.jpg"
+		},
+		{
+			"name": "Lime",
+			"category": "fruit",
+			"weight": "500g",
+			"price": "$3.99",
+			"discount": "5% off",
+			"discountPrice": "$4.25",
+			"review": "$4.25",
+			"image": "image20.jpg"
+		}
+	]
+}
