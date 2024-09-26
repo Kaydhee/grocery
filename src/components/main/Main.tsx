@@ -1,3 +1,5 @@
+import Footer from '../footer/Footer';
+import NewsLetter from '../newsletter/NewsLetter';
 import Activities from './activities/Activities';
 import Aside from './aside/Aside';
 import ProductList from './productsList/ProductList';
@@ -11,6 +13,8 @@ const Main = () => {
 					<ProductList />
 				</div>
 				<Activities />
+				<NewsLetter />
+				<Footer />
 			</div>
 		</main>
 	);
