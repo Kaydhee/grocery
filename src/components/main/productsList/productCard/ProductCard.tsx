@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { GoHeart } from 'react-icons/go';
 import fruitImage from './temp assets/fruit1.png';
 import { FaStar } from 'react-icons/fa';
@@ -22,7 +23,7 @@ const ProductCard: React.FC<ProductInterface> = (props) => {
 	const { cart, addToCart } = useCart();
 
 	return (
-		<article className='text-xl w-[20rem] p-4 border-2 border-gray rounded-xl'>
+		<article className='text-sm md:text-xl w-[10rem] md:w-[15rem] p-2 md:p-4 border-2 border-gray/50 rounded-xl'>
 			<div className='flex items-center justify-between mb-2 '>
 				<span className='rounded-r-3xl rounded-l-md bg-green text-white p-2'>
 					{props?.discountPrice}
@@ -30,11 +31,11 @@ const ProductCard: React.FC<ProductInterface> = (props) => {
 
 				<button
 					onClick={() => addToFavorites(props)}
-					className='bg-green rounded-3xl flex items-center justify-between gap-2 text-white px-2 py-1'>
+					className='border-2 border-gray/50 rounded-full flex items-center justify-between gap-2 text-black p-2'>
 					<GoHeart />
 				</button>
 			</div>
-			<div className='mb-4 '>
+			<div className='mb-4 flex items-center justify-center'>
 				<img
 					src={fruitImage}
 					alt='fruit image'
@@ -65,7 +66,6 @@ const ProductCard: React.FC<ProductInterface> = (props) => {
 					<span>add</span>
 				</button>
 				{/* <AddToCartButton fn={() => props.name} /> */}
-				{/* Pass a function to the button */}
 			</div>
 		</article>
 	);

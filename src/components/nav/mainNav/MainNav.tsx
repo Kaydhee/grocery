@@ -20,11 +20,11 @@ const MainNav = () => {
 
 	return (
 		<section className=' w-full bg-green'>
-			<div className=' w-[90%] mx-auto flex items-center justify-between py-3 text-xl'>
+			<div className='w-[95%] md:w-[90%] mx-auto flex items-center justify-between py-4 md:py-6 text-base font-semibold'>
 				<Logo />
 
-				<div className='text-white'>
-					<span>Location</span>
+				<div className='text-white hidden lg:block'>
+					<span className='opacity-50'>Location</span>
 					<div className='flex items-center justify-between gap-2 '>
 						<MdLocationOn className='text-yellow' />
 						<Select

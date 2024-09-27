@@ -7,8 +7,8 @@ import Review from './review/Review';
 
 const Aside = () => {
 	return (
-		<aside className='py-[2%] flex flex-col gap-3 w-[26rem] '>
-			<div className='my-2 text-3xl font-bold'>
+		<aside className='py-[2%] flex flex-col gap-3 w-[10rem] md:w-[26rem] '>
+			<div className='my-2 text-xl sm:text-2xl md:text-3xl font-bold'>
 				<h2>Filter Options</h2>
 			</div>
 

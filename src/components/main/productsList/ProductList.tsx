@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import ActiveFilter from './activeFilter/ActiveFilter';
 import ProductCard from './productCard/ProductCard';
 import ProductHeading from './productHeading/ProductHeading';
@@ -8,10 +9,7 @@ import { useQuery } from '@tanstack/react-query';
 import { ProductInterface } from './productCard/ProductCard';
 
 const ProductList = () => {
-	const { isLoading, error, data, isFetching } = useQuery(
-		['repoData'],
-		fetchProducts
-	);
+	const { isLoading, error, data } = useQuery(['repoData'], fetchProducts);
 
 	// console.log(data);
 	if (isLoading) return 'Loading...';
@@ -24,7 +22,7 @@ const ProductList = () => {
 				<ProductHeading />
 				<ActiveFilter />
 
-				<div className='grid grid-cols-3 gap-2'>
+				<div className='flex items-center justify-between flex-wrap gap-2'>
 					{data.map((product: ProductInterface, index: number) => (
 						<ProductCard
 							key={index}
