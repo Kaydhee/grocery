@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import ActiveFilter from './activeFilter/ActiveFilter';
 import ProductCard from './productCard/ProductCard';
 import ProductHeading from './productHeading/ProductHeading';
@@ -14,7 +13,9 @@ const ProductList = () => {
 	// console.log(data);
 	if (isLoading) return 'Loading...';
 
-	if (error) return 'An error has occurred: ' + error.message;
+	if (error instanceof Error) {
+		return 'An error has occurred: ' + error.message;
+	}
 
 	return (
 		<section className='w-full'>

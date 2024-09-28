@@ -6,10 +6,12 @@ const Brand = () => {
 	const navigate = useNavigate();
 
 	// Initialize state from URL search params or empty array
-	const [brands, setBrands] = useState(searchParams.get('brands')?.split(',') || []);
+	const [brands, setBrands] = useState(
+		searchParams.get('brands')?.split(',') || []
+	);
 
 	// Handle brand selection changes
-	const handleBrandChange = (event) => {
+	const handleBrandChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 		const { value, checked } = event.target;
 		let updatedBrands;
 
@@ -40,11 +42,13 @@ const Brand = () => {
 	}, [searchParams]);
 
 	// Helper function to check if a brand is selected
-	const isChecked = (brand) => brands.includes(brand);
+	const isChecked = (brand: string) => brands.includes(brand);
 
 	return (
 		<div className='border-2 border-l-0 border-b-0 border-r-0 border-t-gray/50'>
-			<h2 className='mb-4 font-bold md:font-semibold text-xl md:text-2xl'>Brand</h2>
+			<h2 className='mb-4 font-bold md:font-semibold text-xl md:text-2xl'>
+				Brand
+			</h2>
 			<ul className='flex flex-col items-start justify-start gap-2 text-sm md:text-xl'>
 				<li className='flex items-center justify-center gap-2'>
 					<input

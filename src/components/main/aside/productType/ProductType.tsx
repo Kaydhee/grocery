@@ -6,10 +6,14 @@ const ProductType = () => {
 	const navigate = useNavigate();
 
 	// Initialize state from URL search params
-	const [productTypes, setProductTypes] = useState(searchParams.get('productTypes')?.split(',') || []);
+	const [productTypes, setProductTypes] = useState(
+		searchParams.get('productTypes')?.split(',') || []
+	);
 
 	// Handle product type checkbox change
-	const handleProductTypeChange = (event) => {
+	const handleProductTypeChange = (
+		event: React.ChangeEvent<HTMLInputElement>
+	) => {
 		const selectedType = event.target.value;
 		let updatedTypes = [...productTypes];
 

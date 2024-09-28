@@ -1,6 +1,10 @@
 import { IoMdClose } from 'react-icons/io';
 
-const DeleteButton = ({onClick}) => {
+interface DeleteButtonProps {
+	onClick: () => void;
+}
+
+const DeleteButton: React.FC<DeleteButtonProps> = ({ onClick }) => {
 	return (
 		<button onClick={onClick}>
 			<IoMdClose />

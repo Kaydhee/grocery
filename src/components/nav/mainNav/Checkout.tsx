@@ -1,25 +1,3 @@
-// import { CiHeart } from 'react-icons/ci';
-// import { HiOutlineShoppingBag } from 'react-icons/hi2';
-// import { IoPersonOutline } from 'react-icons/io5';
-
-// const Checkout = () => {
-// 	return (
-// 		<div className=' flex items-center justify-between gap-4 text-2xl text-white font-semibold'>
-// 			<button onClick={}>
-// 				<CiHeart />
-// 			</button>
-// 			<button>
-// 				<HiOutlineShoppingBag />
-// 			</button>
-// 			<button>
-// 				<IoPersonOutline />
-// 			</button>
-// 		</div>
-// 	);
-// };
-
-// export default Checkout;
-
 import { useState } from 'react';
 import { CiHeart } from 'react-icons/ci';
 import { HiOutlineShoppingBag } from 'react-icons/hi';
@@ -31,8 +9,8 @@ const Checkout = () => {
 	const [isPopupFavouriteOpen, setPopupFavouriteOpen] = useState(false);
 	const [isPopupCartOpen, setPopupCartOpen] = useState(false);
 
-	const { favorites, addToFavorites } = useFavorites();
-	const { cart, addToCart } = useCart();
+	const { favorites } = useFavorites();
+	useCart();
 
 	const handleFavouriteClick = () => {
 		setPopupFavouriteOpen(true);

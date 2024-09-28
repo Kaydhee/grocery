@@ -11,7 +11,9 @@ const Availability = () => {
 	);
 
 	// Handle availability selection changes
-	const handleAvailabilityChange = (event) => {
+	const handleAvailabilityChange = (
+		event: React.ChangeEvent<HTMLInputElement>
+	) => {
 		const { value, checked } = event.target;
 		let updatedAvailability;
 
@@ -42,7 +44,7 @@ const Availability = () => {
 	}, [searchParams]);
 
 	// Helper function to check if a status is selected
-	const isChecked = (status) => availability.includes(status);
+	const isChecked = (status: string) => availability.includes(status);
 
 	return (
 		<div className='border-2 border-l-0 border-b-0 border-r-0 border-t-gray/50'>

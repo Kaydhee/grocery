@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useMutation, useQueryClient, useQuery } from '@tanstack/react-query';
 
 export const fetchProducts = async () => {
@@ -15,7 +16,7 @@ export const useAddToCart = () => {
 	const queryClient = useQueryClient();
 
 	return useMutation(addToCart, {
-		onSuccess: (data, variables) => {
+		onSuccess: (_data, variables) => {
 			// Update cache on successful mutation
 			queryClient.setQueryData(['cart'], (oldCart: any) => [
 				...(oldCart || []),

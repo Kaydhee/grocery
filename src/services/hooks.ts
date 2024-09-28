@@ -8,7 +8,7 @@ export const useFavorites = () => {
 
 	const { data: favorites } = useQuery([favoritesKey], () => {
 		console.log('Tryign to get favourite');
-		return JSON.parse(localStorage.getItem(favoritesKey)) || [];
+		return JSON.parse(localStorage.getItem(favoritesKey) || '[]');
 	});
 
 	const addToFavorites = (item: ProductInterface) => {
@@ -29,8 +29,8 @@ export const useCart = () => {
 	const queryClient = useQueryClient();
 	const cartKey = 'cart' as string;
 
-	const { data: cart } = useQuery([cartKey], () => {
-		return JSON.parse(localStorage.getItem(cartKey)) || [];
+	const { data: cart = [] } = useQuery([cartKey], () => {
+		return JSON.parse(localStorage.getItem(cartKey) || '[]');
 	});
 
 	const addToCart = (item: ProductInterface) => {
@@ -42,3 +42,20 @@ export const useCart = () => {
 	return { cart, addToCart };
 };
 
+// export const useCart = () => {
+// 	const queryClient = useQueryClient();
+// 	const cartKey = 'cart' as string;
+
+// 	const { data: cart = [] } = useQuery<ProductInterface[]>(cartKey, () => {
+// 		const storedCart = localStorage.getItem(cartKey);
+// 		return storedCart ? JSON.parse(storedCart) : [];
+// 	});
+
+// 	const addToCart = (item: ProductInterface) => {
+// 		const updatedCart = [...cart, item];
+// 		localStorage.setItem(cartKey, JSON.stringify(updatedCart));
+// 		queryClient.setQueryData<ProductInterface[]>(cartKey, updatedCart);
+// 	};
+
+// 	return { cart, addToCart };
+// };

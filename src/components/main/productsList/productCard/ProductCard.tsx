@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { GoHeart } from 'react-icons/go';
 import fruitImage from './temp assets/fruit1.png';
 import { FaStar } from 'react-icons/fa';
@@ -19,8 +18,8 @@ export interface ProductInterface {
 }
 
 const ProductCard: React.FC<ProductInterface> = (props) => {
-	const { favorites, addToFavorites } = useFavorites();
-	const { cart, addToCart } = useCart();
+	const { addToFavorites } = useFavorites();
+	const { addToCart } = useCart();
 
 	return (
 		<article className='text-sm md:text-xl w-[10rem] md:w-[15rem] p-2 md:p-4 border-2 border-gray/50 rounded-xl'>
