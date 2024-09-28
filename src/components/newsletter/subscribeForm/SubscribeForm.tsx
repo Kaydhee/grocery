@@ -1,7 +1,7 @@
 const SubscribeForm = () => {
 	return (
 		<div>
-			<div className='flex items-center justify-between gap-5  rounded '>
+			<div className='flex flex-col sm:flex-row items-center justify-between gap-5  rounded '>
 				<input
 					type='email'
 					name='email'

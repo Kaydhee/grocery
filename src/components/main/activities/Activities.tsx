@@ -4,8 +4,8 @@ import { RiCustomerServiceFill } from 'react-icons/ri';
 
 const Activities = () => {
 	return (
-		<div className='w-full mt-4 p-10'>
-			<div className='flex items-center justify-between text-2xl'>
+		<section className='w-[90%] md:w-[95%] mx-auto mt-4 p-10'>
+			<div className='flex items-center justify-between flex-wrap gap-4 text-base md:text-2xl'>
 				<div className='flex items-center justify-between gap-2'>
 					<FaCube className='text-green text-5xl ' />
 					<div className=''>
@@ -28,7 +28,7 @@ const Activities = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

@@ -6,16 +6,16 @@ import ProductList from './productsList/ProductList';
 
 const Main = () => {
 	return (
-		<main className='w-full'>
+		<main className='w-full overflow-hidden'>
 			<div className='w-[95%] md:w-[90%] mx-auto my-4'>
 				<div className='flex flex-row items-start justify-between gap-4'>
 					<Aside />
 					<ProductList />
 				</div>
-				<Activities />
-				<NewsLetter />
-				<Footer />
 			</div>
+			<Activities />
+			<NewsLetter />
+			<Footer />
 		</main>
 	);
 };
