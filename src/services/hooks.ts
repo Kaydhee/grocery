@@ -42,20 +42,3 @@ export const useCart = () => {
 	return { cart, addToCart };
 };
 
-// Custom hook for filters
-export const useFilters = () => {
-	const queryClient = useQueryClient();
-	const filtersKey = 'filters';
-
-	const { data: filters = {} } = useQuery([filtersKey], () => {
-		return JSON.parse(localStorage.getItem(filtersKey)) || {};
-	});
-
-	const updateFilters = (newFilters) => {
-		const updatedFilters = { ...filters, ...newFilters };
-		localStorage.setItem(filtersKey, JSON.stringify(updatedFilters));
-		queryClient.setQueryData([filtersKey], updatedFilters);
-	};
-
-	return { filters, updateFilters };
-};

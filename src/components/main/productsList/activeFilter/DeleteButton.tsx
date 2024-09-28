@@ -1,8 +1,8 @@
 import { IoMdClose } from 'react-icons/io';
 
-const DeleteButton = () => {
+const DeleteButton = ({onClick}) => {
 	return (
-		<button>
+		<button onClick={onClick}>
 			<IoMdClose />
 		</button>
 	);

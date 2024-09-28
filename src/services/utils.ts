@@ -8,11 +8,6 @@ export const fetchProducts = async () => {
 
 // Example API call to add an item to cart
 const addToCart = async (itemId: string) => {
-	// Simulate API call
-	//   return await fetch('/api/cart', {
-	//     method: 'POST',
-	//     body: JSON.stringify({ itemId }),
-	//   });
 	console.log(itemId);
 };
 
