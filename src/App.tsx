@@ -14,17 +14,15 @@ const queryClient = new QueryClient({
 	},
 });
 
-
-function RootMain(){
+function RootMain() {
 	return (
 		<>
 			<Nav />
 			<Title />
 			<Main />
 		</>
-	)
+	);
 }
-
 
 function App() {
 	return (
@@ -33,8 +31,14 @@ function App() {
 				<ReactQueryDevtools initialIsOpen={false} />
 				<Router>
 					<Routes>
-						
-						<Route path="/" element={<RootMain />} />
+						<Route
+							path='/'
+							element={<RootMain />}
+						/>
+						<Route
+							path='/products/page/:pageNumber'
+							element={<Main />}
+						/>
 					</Routes>
 				</Router>
 			</QueryClientProvider>

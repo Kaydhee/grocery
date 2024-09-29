@@ -19,7 +19,7 @@ const MainNav = () => {
 	};
 
 	return (
-		<section className=' w-full bg-green'>
+		<section className=' w-full bg-green relative'>
 			<div className='w-[95%] md:w-[90%] mx-auto flex items-center justify-between py-4 md:py-6 text-base font-semibold'>
 				<Logo />
 

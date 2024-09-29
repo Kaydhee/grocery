@@ -4,8 +4,8 @@ import UpperNav from './upperNav/UpperNav';
 
 const Nav = () => {
 	return (
-		<nav className='w-full mx-auto'>
-			<div className=''>
+		<nav className='w-full mx-auto overflow-x-hidden  '>
+			<div className='  '>
 				<UpperNav />
 				<MainNav />
 				<NavItems />

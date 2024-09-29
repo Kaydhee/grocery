@@ -5,8 +5,8 @@ import Logo from '../logo/Logo';
 const Footer = () => {
 	return (
 		<footer className='bg-gray/50 w-full'>
-			<div className='bg-green rounded-xl flex flex-col items-start justify-start w-[90%] md:w-[98%] mx-auto p-20'>
-				<div className=' flex flex-col md:flex-row items-start justify-between gap-5 text-xl text-white mb-4 border-2 border-l-0 border-r-0 border-t-0 border-b-white/50 pb-5'>
+			<div className='bg-green rounded-xl flex flex-col items-start justify-start text-base  sm:text-xl  w-[90%] md:w-[98%] mx-auto p-20'>
+				<div className=' flex flex-col md:flex-row items-start justify-between gap-5  text-white mb-4 border-2 border-l-0 border-r-0 border-t-0 border-b-white/50 pb-5'>
 					<div className=''>
 						<div className='w-[10rem]'>
 							<Logo />
@@ -48,7 +48,7 @@ const Footer = () => {
 					</ul>
 				</div>
 
-				<div className=' flex flex-wrap items-center justify-between text-white mt-4 text-xl'>
+				<div className=' flex flex-wrap items-center justify-between text-white mt-4 '>
 					<p className='flex flex-wrap items-center justify-between gap-2'>
 						Copyright <FaRegCopyright /> 2024{' '}
 						<span className='text-yellow'> Grocery website Design.</span>All

@@ -41,7 +41,7 @@ const Checkout = () => {
 			</button>
 
 			{isPopupCartOpen && (
-				<div className='w-20 h-30 flex items-center justify-center bg-blue text-white p-4 rounded shadow-lg'>
+				<div className='w-full  flex items-center justify-center bg-greenLight text-white text-sm top-10 right-10 p-4 rounded absolute'>
 					<div className=''>
 						<button
 							onClick={handleCartClose}
@@ -64,7 +64,7 @@ const Checkout = () => {
 			)}
 
 			{isPopupFavouriteOpen && (
-				<div className='w-20 h-30 flex items-center justify-center bg-red text-white p-4 rounded shadow-lg'>
+				<div className='w-full  flex items-center justify-center  bg-greenLight text-white text-sm top-10 right-10 p-4 rounded absolute'>
 					<div className=''>
 						<button
 							onClick={handleFavouriteClose}

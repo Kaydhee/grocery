@@ -17,7 +17,7 @@ const NavItems = () => {
 					<li>Blogs</li>
 				</ul>
 
-				<div className='hidden lg:block items-center justify-between gap-2 text-yellow text-xl'>
+				<div className='hidden lg:flex items-center justify-between gap-2 text-yellow text-xl'>
 					<span>Recently Viewed</span>
 					<MdKeyboardArrowDown />
 				</div>

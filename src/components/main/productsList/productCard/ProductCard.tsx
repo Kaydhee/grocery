@@ -5,19 +5,20 @@ import { HiOutlineShoppingBag } from 'react-icons/hi2';
 import { useCart, useFavorites } from '../../../../services/hooks';
 
 export interface ProductInterface {
-	category: string;
-	price: string;
-	discountPrice: string;
-	discount: string;
+	id: number;
 	name: string;
-	image: string;
-	review: string;
+	category: string;
 	weight: string;
+	price: string;
+	discount: string;
+	discountPrice: string;
+	review: string;
+	image: string;
 	rating: string;
-	id: string;
 }
 
-const ProductCard: React.FC<ProductInterface> = (props) => {
+// const ProductCard: React.FC<ProductInterface> = (props) => {
+const ProductCard = (props: ProductInterface) => {
 	const { addToFavorites } = useFavorites();
 	const { addToCart } = useCart();
 
