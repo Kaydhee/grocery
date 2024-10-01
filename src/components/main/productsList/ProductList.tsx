@@ -15,12 +15,12 @@ const ProductList = () => {
 	const { pageNumber } = useParams<{ pageNumber: string }>();
 	const currentPage = parseInt(pageNumber || '1', 10);
 
-	// Calculate the products to display based on the current page
+	// Calculating the products to display based on the current page
 	const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
 	const endIndex = startIndex + ITEMS_PER_PAGE;
 	const paginatedData = data.slice(startIndex, endIndex);
 
-	// Calculate total pages
+	// Calculating total pages
 	const totalPages = Math.ceil(data.length / ITEMS_PER_PAGE);
 
 	return (
@@ -49,7 +49,7 @@ const ProductList = () => {
 								to={`/products/page/${page}`}
 								className={`w-8 h-8 flex items-center justify-center ${
 									page === currentPage ? 'bg-green' : 'font-normal'
-								}  text-black rounded-full p-1`}>
+								}  text-black text-sm rounded-full p-1`}>
 								{page}
 							</Link>
 						))}

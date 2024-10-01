@@ -13,3 +13,9 @@ img {
 	width: 100%;
 	max-width: 5rem;
 }
+
+@media (max-width: 524px) {
+	img {
+		max-width: 3rem;
+	}
+}

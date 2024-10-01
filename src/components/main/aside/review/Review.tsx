@@ -13,15 +13,11 @@ const Review = () => {
 
 	// List of possible star ratings (corresponding to 5-star, 4.5-star, etc.)
 	const ratingOptions = [
-		{ value: '5', label: '5 stars', stars: 5 },
-		{ value: '4.5', label: '4.5 stars', stars: 4.5 },
-		{ value: '4', label: '4 stars', stars: 4 },
-		{ value: '3.5', label: '3.5 stars', stars: 3.5 },
-		{ value: '3', label: '3 stars', stars: 3 },
-		{ value: '2.5', label: '2.5 stars', stars: 2.5 },
-		{ value: '2', label: '2 stars', stars: 2 },
-		{ value: '1.5', label: '1.5 stars', stars: 1.5 },
-		{ value: '1', label: '1 star', stars: 1 },
+		{ value: '5', label: '5 ', stars: 5 },
+		{ value: '4', label: '4 ', stars: 4 },
+		{ value: '3', label: '3 ', stars: 3 },
+		{ value: '2', label: '2 ', stars: 2 },
+		{ value: '1', label: '1 ', stars: 1 },
 	];
 
 	// Handle rating checkbox changes

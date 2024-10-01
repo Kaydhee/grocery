@@ -14,35 +14,25 @@ const queryClient = new QueryClient({
 	},
 });
 
-function RootMain() {
-	return (
-		<>
-			<Nav />
-			<Title />
-			<Main />
-		</>
-	);
-}
-
 function App() {
 	return (
-		<>
-			<QueryClientProvider client={queryClient}>
-				<ReactQueryDevtools initialIsOpen={false} />
-				<Router>
-					<Routes>
-						<Route
-							path='/'
-							element={<RootMain />}
-						/>
-						<Route
-							path='/products/page/:pageNumber'
-							element={<Main />}
-						/>
-					</Routes>
-				</Router>
-			</QueryClientProvider>
-		</>
+		<QueryClientProvider client={queryClient}>
+			<ReactQueryDevtools initialIsOpen={false} />
+			<Router>
+				<Nav />
+				<Title />
+				<Routes>
+					<Route
+						path='/'
+						element={<Main />}
+					/>
+					<Route
+						path='/products/page/:pageNumber'
+						element={<Main />}
+					/>
+				</Routes>
+			</Router>
+		</QueryClientProvider>
 	);
 }
 
