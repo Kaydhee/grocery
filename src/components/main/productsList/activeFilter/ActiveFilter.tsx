@@ -45,7 +45,7 @@ const ActiveFilter = () => {
 				return (
 					<div
 						key={filterType}
-						className='flex items-center justify-between gap-2 bg-yellow rounded-3xl p-2 md:p-3'>
+						className='flex items-center justify-between gap-2 bg-yellow rounded-3xl text-sm sm:text-base p-1 md:p-3'>
 						<span>
 							{filterType.charAt(0).toUpperCase() + filterType.slice(1)}:
 						</span>
@@ -54,18 +54,16 @@ const ActiveFilter = () => {
 					</div>
 				);
 			}
-			return null; // Return null if no filter is found
+			return null;
 		});
 	};
 
 	return (
-		<div className='flex flex-wrap items-center justify-between mt-3 text-base md:text-xl mb-3'>
+		<div className='flex flex-wrap items-center justify-between mt-3 text-sm md:text-xl mb-3'>
 			<span>Active Filter</span>
 
-			{/* Call the displayActiveFilters function directly to render filters */}
 			{displayActiveFilters()}
 
-			{/* Clear all filters */}
 			<button
 				className='text-green underline'
 				onClick={handleClearAll}>

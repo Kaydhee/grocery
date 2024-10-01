@@ -39,7 +39,7 @@ const ProductList = () => {
 						))}
 					</div>
 					{/* Pagination Links */}
-					<div className='flex items-center justify-between gap-2 mt-4'>
+					<div className='flex items-center justify-between gap-1 sm:gap-2 mt-4'>
 						{currentPage > 1 && (
 							<Link to={`/products/page/${currentPage - 1}`}>Previous</Link>
 						)}
